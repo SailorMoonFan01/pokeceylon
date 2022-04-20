@@ -1,6 +1,9 @@
 	object_const_def ; object_event constants
 	const VIRIDIANGYM_BLUE
 	const VIRIDIANGYM_GYM_GUY
+	const VIRIDIANGYM_YOUNGSTER1
+	const VIRIDIANGYM_YOUNGSTER2
+	const VIRIDIANGYM_YOUNGSTER3
 
 ViridianGym_MapScripts:
 	db 0 ; scene scripts
@@ -60,6 +63,39 @@ ViridianGymStatue:
 .Beaten:
 	gettrainername STRING_BUFFER_4, BLUE, BLUE1
 	jumpstd GymStatue2Script
+	
+TrainerYoungsterLiam:
+	trainer YOUNGSTER, LIAM, EVENT_BEAT_YOUNGSTER_LIAM, YoungsterLiamSeenText, YoungsterLiamBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext YoungsterLiamAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerYoungsterLucas:
+	trainer YOUNGSTER, LUCAS, EVENT_BEAT_YOUNGSTER_LUCAS, YoungsterLucasSeenText, YoungsterLucasBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext YoungsterLucasAfterBattleText
+	waitbutton
+	closetext
+	end
+	
+TrainerYoungsterMateo:
+	trainer YOUNGSTER, MATEO, EVENT_BEAT_YOUNGSTER_MATEO, YoungsterMateoSeenText, YoungsterMateoBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext YoungsterMateoAfterBattleText
+	waitbutton
+	closetext
+	end
 
 LeaderBlueBeforeText:
 	text "BLUE: Yo! Finally"
@@ -165,6 +201,66 @@ ViridianGymGuyWinText:
 	para "battle. It brought"
 	line "tears to my eyes."
 	done
+	
+YoungsterLiamSeenText:
+	text "Oh a challenger"
+	line "awaits VIRIDIAN"
+	cont "GYM!"
+
+	para "Let's battle!"
+	done
+
+YoungsterLiamBeatenText:
+	text "Impossible!"
+	done
+
+YoungsterLiamAfterBattleText:
+	text "BLUE has trained"
+	line "hard enough to "
+	cont "beat RED in a"
+	cont "rematch!"
+
+	para "You better not"
+	line "mess with him!"
+	done
+	
+YoungsterLucasSeenText:
+	text "VIRIDIAN GYM has"
+	line "been renovated"
+	cont "after GIOVANNI was"
+	cont "leader!"
+
+	para "I feel blessed to"
+	line "be a trainer here!"
+	done
+
+YoungsterLucasBeatenText:
+	text "I should train"
+	line "more!"
+	done
+
+YoungsterLucasAfterBattleText:
+	text "You don't stand a"
+	line "chance against the"
+	cont "new leader!"
+	done
+	
+YoungsterMateoSeenText:
+	text "Oh a new face!"
+
+	para "Ready to battle"
+	line "my friend!"
+	done
+
+YoungsterMateoBeatenText:
+	text "How!"
+	done
+
+YoungsterMateoAfterBattleText:
+	text "If you beat the"
+	line "leader then I'd"
+	cont "be shocked!"
+	done
 
 ViridianGym_MapEvents:
 	db 0, 0 ; filler
@@ -179,6 +275,10 @@ ViridianGym_MapEvents:
 	bg_event  3, 13, BGEVENT_READ, ViridianGymStatue
 	bg_event  6, 13, BGEVENT_READ, ViridianGymStatue
 
-	db 2 ; object events
+	db 5 ; object events
 	object_event  5,  3, SPRITE_BLUE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ViridianGymBlueScript, EVENT_VIRIDIAN_GYM_BLUE
 	object_event  7, 13, SPRITE_GYM_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ViridianGymGuyScript, EVENT_VIRIDIAN_GYM_BLUE
+	object_event  5,  6, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterLiam, EVENT_VIRIDIAN_GYM_BLUE
+	object_event  4,  9, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterLucas, EVENT_VIRIDIAN_GYM_BLUE
+	object_event  4, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterMateo, EVENT_VIRIDIAN_GYM_BLUE
+

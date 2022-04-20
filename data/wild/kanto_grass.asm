@@ -309,6 +309,33 @@ KantoGrassWildMons:
 	db 66, SCIZOR
 	ENDC
 
+	map_id VIRIDIAN_FOREST
+	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
+	; morn
+	db 66, PIKACHU
+	db 67, LEDIAN
+	db 65, BEEDRILL
+	db 67, PINSIR
+	db 67, PARASECT
+	db 66, VENOMOTH
+	db 66, SCYTHER
+	; day
+	db 66, PIKACHU
+	db 67, BUTTERFREE
+	db 65, VENOMOTH
+	db 67, SCYTHER
+	db 67, PINSIR
+	db 66, BEEDRILL
+	db 66, SCIZOR
+	; nite
+	db 66, PIKACHU
+	db 67, ARIADOS
+	db 65, PINSIR
+	db 67, SCYTHER
+	db 67, VENOMOTH
+	db 66, PARASECT
+	db 66, SCIZOR
+
 	map_id ROUTE_3
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 
@@ -1225,6 +1252,141 @@ KantoGrassWildMons:
 	db 62, HOUNDOOM
 	ENDC
 
+	map_id SEAFOAM_ISLANDS_1F
+	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	; morn
+	db 69, SEEL
+	db 70, GOLBAT
+	db 70, CLOYSTER
+	db 71, JYNX
+	db 72, DEWGONG
+	db 71, CORSOLA
+	db 73, LAPRAS
+	; day
+	db 69, SEEL
+	db 70, GOLBAT
+	db 70, CLOYSTER
+	db 71, JYNX
+	db 72, DEWGONG
+	db 71, CORSOLA
+	db 73, LAPRAS
+	; nite
+	db 69, SEEL
+	db 70, GOLBAT
+	db 70, CLOYSTER
+	db 71, JYNX
+	db 72, DEWGONG
+	db 72, PILOSWINE
+	db 73, LAPRAS
+	
+	map_id SEAFOAM_ISLANDS_B1F
+	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	; morn
+	db 69, SEEL
+	db 70, GOLBAT
+	db 70, CLOYSTER
+	db 71, JYNX
+	db 72, DEWGONG
+	db 71, CORSOLA
+	db 73, LAPRAS
+	; day
+	db 69, SEEL
+	db 70, GOLBAT
+	db 70, CLOYSTER
+	db 71, JYNX
+	db 72, DEWGONG
+	db 71, CORSOLA
+	db 73, LAPRAS
+	; nite
+	db 69, SEEL
+	db 70, GOLBAT
+	db 70, CLOYSTER
+	db 71, JYNX
+	db 72, DEWGONG
+	db 72, PILOSWINE
+	db 73, LAPRAS
+	
+	map_id SEAFOAM_ISLANDS_B2F
+	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	; morn
+	db 69, SEEL
+	db 70, GOLBAT
+	db 70, CLOYSTER
+	db 71, JYNX
+	db 72, DEWGONG
+	db 71, CORSOLA
+	db 73, LAPRAS
+	; day
+	db 69, SEEL
+	db 70, GOLBAT
+	db 70, CLOYSTER
+	db 71, JYNX
+	db 72, DEWGONG
+	db 71, CORSOLA
+	db 73, LAPRAS
+	; nite
+	db 69, SEEL
+	db 70, GOLBAT
+	db 70, CLOYSTER
+	db 71, JYNX
+	db 72, DEWGONG
+	db 72, PILOSWINE
+	db 73, LAPRAS
+	
+	map_id SEAFOAM_ISLANDS_B3F
+	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	; morn
+	db 69, SEEL
+	db 70, GOLBAT
+	db 70, CLOYSTER
+	db 71, JYNX
+	db 72, DEWGONG
+	db 71, CORSOLA
+	db 73, LAPRAS
+	; day
+	db 69, SEEL
+	db 70, GOLBAT
+	db 70, CLOYSTER
+	db 71, JYNX
+	db 72, DEWGONG
+	db 71, CORSOLA
+	db 73, LAPRAS
+	; nite
+	db 69, SEEL
+	db 70, GOLBAT
+	db 70, CLOYSTER
+	db 71, JYNX
+	db 72, DEWGONG
+	db 72, PILOSWINE
+	db 73, LAPRAS
+	
+	map_id SEAFOAM_ISLANDS_B4F
+	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	; morn
+	db 69, SEEL
+	db 70, GOLBAT
+	db 70, CLOYSTER
+	db 71, JYNX
+	db 72, DEWGONG
+	db 71, CORSOLA
+	db 73, LAPRAS
+	; day
+	db 69, SEEL
+	db 70, GOLBAT
+	db 70, CLOYSTER
+	db 71, JYNX
+	db 72, DEWGONG
+	db 71, CORSOLA
+	db 73, LAPRAS
+	; nite
+	db 69, SEEL
+	db 70, GOLBAT
+	db 70, CLOYSTER
+	db 71, JYNX
+	db 72, DEWGONG
+	db 72, PILOSWINE
+	db 73, LAPRAS
+
 	map_id ROUTE_28
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 
@@ -1280,5 +1442,32 @@ KantoGrassWildMons:
 	db 84, JOLTEON
 	db 84, ESPEON
 	ENDC
+
+	map_id CERULEAN_CAVE
+	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	; morn
+	db 82, CROBAT
+	db 82, PARASECT
+	db 83, PRIMEAPE
+	db 83, TANGELA
+	db 83, MACHAMP
+	db 84, ELECTRODE
+	db 84, DITTO
+	; day
+	db 82, CROBAT
+	db 82, PARASECT
+	db 83, PRIMEAPE
+	db 83, TANGELA
+	db 83, MACHAMP
+	db 84, ELECTRODE
+	db 84, DITTO
+	; nite
+	db 82, CROBAT
+	db 82, PARASECT
+	db 83, PRIMEAPE
+	db 83, TANGELA
+	db 83, MACHAMP
+	db 84, ELECTRODE
+	db 84, DITTO
 
 	db -1 ; end

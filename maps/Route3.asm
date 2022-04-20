@@ -2,6 +2,7 @@
 	const ROUTE3_FISHER1
 	const ROUTE3_YOUNGSTER1
 	const ROUTE3_YOUNGSTER2
+	const ROUTE3_YOUNGSTER3
 	const ROUTE3_FISHER2
 
 Route3_MapScripts:
@@ -38,6 +39,17 @@ TrainerYoungsterJimmy:
 	endifjustbattled
 	opentext
 	writetext YoungsterJimmyAfterBattleText
+	waitbutton
+	closetext
+	end
+	
+TrainerYoungsterDoran:
+	trainer YOUNGSTER, DORAN, EVENT_BEAT_YOUNGSTER_DORAN, YoungsterDoranSeenText, YoungsterDoranBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext YoungsterDoranAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -105,6 +117,22 @@ YoungsterJimmyAfterBattleText:
 	line "policy."
 	done
 
+YoungsterDoranSeenText:
+	text "Some guy with red"
+	line "hair asked me to"
+	cont "battle him!"
+	done
+
+YoungsterDoranBeatenText:
+	text "Whoa!"
+	done
+
+YoungsterDoranAfterBattleText:
+	text "That guy was very"
+	line "arrogant towards"
+	cont "my #MON!"
+	done
+
 FirebreatherBurtSeenText:
 	text "Step right up and"
 	line "take a look!"
@@ -145,4 +173,5 @@ Route3_MapEvents:
 	object_event 26, 15, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerFirebreatherOtis, -1
 	object_event  6,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerYoungsterWarren, -1
 	object_event 20,  8, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterJimmy, -1
+	object_event 14,  2, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterDoran, -1
 	object_event 34,  6, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerFirebreatherBurt, -1

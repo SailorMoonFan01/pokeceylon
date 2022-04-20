@@ -141,6 +141,9 @@ SECTION "bankA", ROMX
 
 INCLUDE "engine/link/link.asm"
 INCLUDE "engine/link/mystery_gift.asm"
+
+SECTION "Wild Bank", ROMX
+
 INCLUDE "engine/overworld/wildmons.asm"
 
 

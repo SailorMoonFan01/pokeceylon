@@ -55,7 +55,7 @@ Credits_Staff::               db "      #MON"                 ; "ポケットモ
                             IF DEF(_GOLD)
                             next "    GOLD SUPREME"
                             ELIF DEF(_SILVER)
-                            next "   SILVER VERSION"
+                            next "   CEYLON VERSION"
                             ENDC
                             next "       STAFF@"
 Credits_Director::            db "      DIRECTOR@"            ; "エグゼクティブ　ディレクター@"

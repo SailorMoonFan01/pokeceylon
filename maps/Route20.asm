@@ -113,15 +113,16 @@ CinnabarGymSignText:
 Route20_MapEvents:
 	db 0, 0 ; filler
 
-	db 1 ; warp events
-	warp_event 38,  7, SEAFOAM_GYM, 1
+	db 2 ; warp events
+	warp_event 30,  5, SEAFOAM_ISLANDS_ENTRANCE, 1
+	warp_event 38,  9, SEAFOAM_ISLANDS_ENTRANCE, 2
 
 	db 0 ; coord events
 
 	db 1 ; bg events
-	bg_event 37, 11, BGEVENT_READ, CinnabarGymSign
+	bg_event 46,  4, BGEVENT_READ, CinnabarGymSign
 
 	db 3 ; object events
-	object_event 49, 13, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerSwimmerfNicole, -1
-	object_event 54, 10, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerSwimmerfLori, -1
-	object_event 45, 10, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerSwimmermCameron, -1
+	object_event 48, 15, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerSwimmerfNicole, -1
+	object_event 53, 12, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerSwimmerfLori, -1
+	object_event 10,  4, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerSwimmermCameron, -1

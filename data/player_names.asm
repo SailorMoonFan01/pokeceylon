@@ -16,10 +16,10 @@ IF DEF(_GOLD)
 	db "RIDLEY@"
 	db "DRAKE@"
 ELIF DEF(_SILVER)
-	db "NATE@"
-	db "JOHN@"
-	db "RIDLEY@"
-	db "DRAKE@"
+	db "MURA@"
+	db "PAUL@"
+	db "HAROLD@"
+	db "SILVER@"
 ENDC
 	db 2
 	db "NAME@" ; title

@@ -159,6 +159,9 @@ SPRITE_POKEMON EQU const_value
 	const SPRITE_MACHOKE
 	const SPRITE_ELECTRODE
 	const SPRITE_PSYDUCK
+	const SPRITE_ARTICUNO
+	const SPRITE_MEWTWO
+
 ; special GetMonSprite values (see engine/overworld/overworld.asm)
 	const_next $e0
 	const SPRITE_DAY_CARE_MON_1 ; e0

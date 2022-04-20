@@ -1,6 +1,9 @@
 	object_const_def ; object_event constants
 	const OLIVINEGYM_JASMINE
 	const OLIVINEGYM_GYM_GUY
+	const OLIVINEGYM_LASS1
+	const OLIVINEGYM_LASS2
+	const OLIVINEGYM_LASS3
 
 OlivineGym_MapScripts:
 	db 0 ; scene scripts
@@ -80,6 +83,39 @@ OlivineGymGuyScript:
 .OlivineGymGuyPreScript:
 	opentext
 	writetext OlivineGymGuyPreText
+	waitbutton
+	closetext
+	end
+
+TrainerLassEmily:
+	trainer LASS, EMILY, EVENT_BEAT_LASS_EMILY, LassEmilySeenText, LassEmilyBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext LassEmilyAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerLassZoey:
+	trainer LASS, ZOEY, EVENT_BEAT_LASS_ZOEY, LassZoeySeenText, LassZoeyBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext LassZoeyAfterBattleText
+	waitbutton
+	closetext
+	end
+	
+TrainerLassDakota:
+	trainer LASS, DAKOTA, EVENT_BEAT_LASS_DAKOTA, LassDakotaSeenText, LassDakotaBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext LassDakotaAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -194,6 +230,56 @@ OlivineGymGuyPreText:
 	line "has to be compas-"
 	cont "sionate."
 	done
+	
+LassEmilySeenText:
+	text "Oh you came for"
+	line "your 6th badge!"
+
+	para "JASMINE can wait!"
+	done
+
+LassEmilyBeatenText:
+	text "You beat me!"
+	done
+
+LassEmilyAfterBattleText:
+	text "You don't stand"
+	line "a chance against"
+	cont "our gym leader!"
+	done
+	
+LassZoeySeenText:
+	text "Are you the one"
+	line "who's a peeping"
+	cont "Tom?"
+	done
+
+LassZoeyBeatenText:
+	text "Oh no!"
+	done
+
+LassZoeyAfterBattleText:
+	text "I hope JASMINE"
+	line "destroys you!"
+	done
+	
+LassDakotaSeenText:
+	text "I've trained so"
+	line "hard just to see"
+	cont "you not stand a"
+	cont "chance!"
+	done
+
+LassDakotaBeatenText:
+	text "What, how!"
+	done
+
+LassDakotaAfterBattleText:
+	text "You may have won"
+	line "this time but I"
+	cont "hope to beat you"
+	cont "next time!"
+	done
 
 OlivineGym_MapEvents:
 	db 0, 0 ; filler
@@ -208,6 +294,9 @@ OlivineGym_MapEvents:
 	bg_event  3, 13, BGEVENT_READ, OlivineGymStatue
 	bg_event  6, 13, BGEVENT_READ, OlivineGymStatue
 
-	db 2 ; object events
+	db 5 ; object events
 	object_event  5,  3, SPRITE_JASMINE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OlivineGymJasmineScript, EVENT_OLIVINE_GYM_JASMINE
 	object_event  7, 13, SPRITE_GYM_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OlivineGymGuyScript, -1
+	object_event  4, 10, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerLassEmily, EVENT_OLIVINE_GYM_JASMINE
+	object_event  5,  8, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerLassZoey, EVENT_OLIVINE_GYM_JASMINE
+	object_event  4,  6, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerLassDakota, EVENT_OLIVINE_GYM_JASMINE

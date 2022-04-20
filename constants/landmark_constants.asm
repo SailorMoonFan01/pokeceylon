@@ -20,6 +20,7 @@
 	const LANDMARK_ROUTE_34          ; 0f
 	const LANDMARK_GOLDENROD_CITY    ; 10
 	const LANDMARK_RADIO_TOWER       ; 11
+	const LANDMARK_GLOBAL_TERMINAL
 	const LANDMARK_ROUTE_35          ; 12
 	const LANDMARK_NATIONAL_PARK     ; 13
 	const LANDMARK_ROUTE_36          ; 14
@@ -54,11 +55,13 @@ KANTO_LANDMARK EQU const_value
 	const LANDMARK_ROUTE_1           ; 2f
 	const LANDMARK_VIRIDIAN_CITY     ; 30
 	const LANDMARK_ROUTE_2           ; 31
+	const LANDMARK_VIRIDIAN_FOREST   ; 54
 	const LANDMARK_PEWTER_CITY       ; 32
 	const LANDMARK_ROUTE_3           ; 33
 	const LANDMARK_MT_MOON           ; 34
 	const LANDMARK_ROUTE_4           ; 35
 	const LANDMARK_CERULEAN_CITY     ; 36
+	const LANDMARK_CERULEAN_CAVE
 	const LANDMARK_ROUTE_24          ; 37
 	const LANDMARK_ROUTE_25          ; 38
 	const LANDMARK_ROUTE_5           ; 39

@@ -116,9 +116,13 @@ ENDM
 	map_attributes CianwoodCity, CIANWOOD_CITY, $35, EAST
 	connection east, Route41, ROUTE_41, 0
 
-	map_attributes GoldenrodCity, GOLDENROD_CITY, $35, NORTH | SOUTH
+	map_attributes GoldenrodCity, GOLDENROD_CITY, $35, NORTH | SOUTH | WEST
 	connection north, Route35, ROUTE_35, 5
 	connection south, Route34, ROUTE_34, 5
+	connection west, GlobalTerminalOutside, GLOBAL_TERMINAL_OUTSIDE, 2
+	
+	map_attributes GlobalTerminalOutside, GLOBAL_TERMINAL_OUTSIDE, $35, EAST
+	connection east, GoldenrodCity, GOLDENROD_CITY, -2
 
 	map_attributes OlivineCity, OLIVINE_CITY, $35, NORTH | WEST
 	connection north, Route39, ROUTE_39, 5
@@ -489,8 +493,15 @@ ENDM
 	map_attributes MoveDeletersHouse, MOVE_DELETERS_HOUSE, $00, 0
 	map_attributes CinnabarPokecenter1F, CINNABAR_POKECENTER_1F, $00, 0
 	map_attributes CinnabarPokecenter2FBeta, CINNABAR_POKECENTER_2F_BETA, $00, 0
+	map_attributes CinnabarGym, CINNABAR_GYM, $00, 0
 	map_attributes Route19FuchsiaGate, ROUTE_19_FUCHSIA_GATE, $00, 0
-	map_attributes SeafoamGym, SEAFOAM_GYM, $09, 0
+	map_attributes SeafoamGym, SEAFOAM_GYM, $09, 0	
+	map_attributes SeafoamIslands1F, SEAFOAM_ISLANDS_1F, $19, 0
+	map_attributes SeafoamIslandsB1F, SEAFOAM_ISLANDS_B1F, $19, 0
+	map_attributes SeafoamIslandsB2F, SEAFOAM_ISLANDS_B2F, $19, 0
+	map_attributes SeafoamIslandsB3F, SEAFOAM_ISLANDS_B3F, $19, 0
+	map_attributes SeafoamIslandsB4F, SEAFOAM_ISLANDS_B4F, $19, 0
+	map_attributes SeafoamIslandsEntrance, SEAFOAM_ISLANDS_ENTRANCE, $09, 0
 	map_attributes CeruleanGymBadgeSpeechHouse, CERULEAN_GYM_BADGE_SPEECH_HOUSE, $00, 0
 	map_attributes CeruleanPoliceStation, CERULEAN_POLICE_STATION, $00, 0
 	map_attributes CeruleanTradeSpeechHouse, CERULEAN_TRADE_SPEECH_HOUSE, $00, 0
@@ -498,6 +509,7 @@ ENDM
 	map_attributes CeruleanPokecenter2FBeta, CERULEAN_POKECENTER_2F_BETA, $00, 0
 	map_attributes CeruleanGym, CERULEAN_GYM, $00, 0
 	map_attributes CeruleanMart, CERULEAN_MART, $00, 0
+	map_attributes CeruleanCave, CERULEAN_CAVE, $00, 0
 	map_attributes Route10Pokecenter1F, ROUTE_10_POKECENTER_1F, $00, 0
 	map_attributes Route10Pokecenter2FBeta, ROUTE_10_POKECENTER_2F_BETA, $00, 0
 	map_attributes PowerPlant, POWER_PLANT, $00, 0
@@ -674,3 +686,7 @@ ENDM
 	map_attributes Route30BerryHouse, ROUTE_30_BERRY_HOUSE, $00, 0
 	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $00, 0
 	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
+	map_attributes GlobalTerminal1F, GLOBAL_TERMINAL_1F, $00, 0
+	map_attributes ViridianForest, VIRIDIAN_FOREST, $00, 0
+	map_attributes Route2NorthGate, ROUTE_2_NORTH_GATE, $00, 0
+	map_attributes Route2SouthGate, ROUTE_2_SOUTH_GATE, $00, 0

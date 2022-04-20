@@ -58,3 +58,5 @@ SpriteMons:
 	db MACHOKE
 	db ELECTRODE
 	db PSYDUCK
+	db ARTICUNO
+	db MEWTWO

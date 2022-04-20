@@ -138,6 +138,12 @@ ENDM
 	map_const SAFARI_ZONE_FUCHSIA_GATE_BETA,                5,  4 ; 80
 	map_const SAFARI_ZONE_BETA,                            10, 18 ; 81
 	map_const VICTORY_ROAD,                                10, 36 ; 82
+	map_const SEAFOAM_ISLANDS_1F,                          15,  9 ; 92
+	map_const SEAFOAM_ISLANDS_B1F,                         15,  9 ; 93
+	map_const SEAFOAM_ISLANDS_B2F,                         15,  9 ; 94
+	map_const SEAFOAM_ISLANDS_B3F,                         15,  9 ; 95
+	map_const SEAFOAM_ISLANDS_B4F,                         15,  9 ; 96
+	map_const SEAFOAM_ISLANDS_ENTRANCE,                    15,  6 ; 97
 
 	newgroup                                                      ;  4
 
@@ -174,6 +180,7 @@ ENDM
 	map_const ROUTE_20,                                    30,  9 ;  6
 	map_const ROUTE_21,                                    10, 18 ;  7
 	map_const CINNABAR_ISLAND,                             10,  9 ;  8
+	map_const CINNABAR_GYM,                                 5,  9 ;  9
 
 	newgroup                                                      ;  7
 
@@ -194,6 +201,7 @@ ENDM
 	map_const ROUTE_24,                                    10,  9 ; 15
 	map_const ROUTE_25,                                    30,  9 ; 16
 	map_const CERULEAN_CITY,                               20, 18 ; 17
+	map_const CERULEAN_CAVE,                               20, 18
 
 	newgroup                                                      ;  8
 
@@ -472,5 +480,16 @@ ENDM
 	map_const ROUTE_30_BERRY_HOUSE,                         4,  4 ;  9
 	map_const MR_POKEMONS_HOUSE,                            4,  4 ; 10
 	map_const ROUTE_31_VIOLET_GATE,                         5,  4 ; 11
+	
+	newgroup	                                                  ; 27
 
-NUM_MAP_GROUPS EQU const_value ; 26
+	map_const GLOBAL_TERMINAL_OUTSIDE,                     10, 13 ;  1
+	map_const GLOBAL_TERMINAL_1F,                           9,  6 ;  2
+	
+	newgroup
+
+	map_const VIRIDIAN_FOREST, 17, 24
+	map_const ROUTE_2_NORTH_GATE,       5,  4
+	map_const ROUTE_2_SOUTH_GATE,       5,  4
+
+NUM_MAP_GROUPS EQU const_value ; 27

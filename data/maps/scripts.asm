@@ -372,6 +372,8 @@ INCLUDE "maps/VermilionPortPassage.asm"
 INCLUDE "maps/MountMoonSquare.asm"
 INCLUDE "maps/MountMoonGiftShop.asm"
 INCLUDE "maps/TinTowerRoof.asm"
+INCLUDE "maps/GlobalTerminalOutside.asm"
+INCLUDE "maps/GlobalTerminal1F.asm"
 
 
 SECTION "Map Scripts 26", ROMX
@@ -463,6 +465,7 @@ INCLUDE "maps/Route26HealHouse.asm"
 INCLUDE "maps/DayOfWeekSiblingsHouse.asm"
 INCLUDE "maps/Route27SandstormHouse.asm"
 INCLUDE "maps/Route29Route46Gate.asm"
+INCLUDE "maps/CinnabarGym.asm"
 
 
 SECTION "Map Scripts 31", ROMX
@@ -492,3 +495,16 @@ INCLUDE "maps/CherrygroveEvolutionSpeechHouse.asm"
 INCLUDE "maps/Route30BerryHouse.asm"
 INCLUDE "maps/MrPokemonsHouse.asm"
 INCLUDE "maps/Route31VioletGate.asm"
+INCLUDE "maps/ViridianForest.asm"
+INCLUDE "maps/Route2NorthGate.asm"
+INCLUDE "maps/Route2SouthGate.asm"
+
+SECTION "Map Scripts 33", ROMX
+
+INCLUDE "maps/SeafoamIslands1F.asm"
+INCLUDE "maps/SeafoamIslandsB1F.asm"
+INCLUDE "maps/SeafoamIslandsB2F.asm"
+INCLUDE "maps/SeafoamIslandsB3F.asm"
+INCLUDE "maps/SeafoamIslandsB4F.asm"
+INCLUDE "maps/SeafoamIslandsEntrance.asm"
+INCLUDE "maps/CeruleanCave.asm"

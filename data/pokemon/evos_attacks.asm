@@ -538,11 +538,11 @@ ZubatEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, BITE
 	db 1, LEECH_LIFE
-	db 1, SUPERSONIC
-	db 15, WING_ATTACK
-	db 27, WING_ATTACK
+	db 1, GUST
+	db 1, MEAN_LOOK
+	db 20, WING_ATTACK
 	db 36, WING_ATTACK
-	db 46, HAZE
+	db 46, WING_ATTACK
 	db 0 ; no more level-up moves
 
 GolbatEvosAttacks:
@@ -835,6 +835,8 @@ AbraEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CONFUSION
 	db 1, KINESIS
+	db 1, HIDDEN_POWER
+	db 1, BARRIER
 	db 0 ; no more level-up moves
 
 KadabraEvosAttacks:
@@ -1188,7 +1190,7 @@ GrimerEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, MUD_SLAP
 	db 1, SLUDGE
-	db 1, ATTRACT
+	db 1, MEAN_LOOK
 	db 1, POISON_GAS
 	db 24, ICE_PUNCH
 	db 27, THUNDERPUNCH
@@ -1236,15 +1238,15 @@ CloysterEvosAttacks:
 GastlyEvosAttacks:
 	db EVOLVE_LEVEL, 25, HAUNTER
 	db 0 ; no more evolutions
-	db 1, SHADOW_BALL
-	db 1, CONFUSE_RAY
+	db 1, MEAN_LOOK
+	db 1, LICK
 	db 1, NIGHT_SHADE
 	db 1, HYPNOSIS
-	db 16, SHADOW_BALL
-	db 21, SHADOW_BALL
-	db 28, SHADOW_BALL
-	db 33, SHADOW_BALL
-	db 36, SHADOW_BALL
+	db 17, CONFUSE_RAY
+	db 20, SHADOW_BALL
+	db 23, SHADOW_BALL
+	db 26, SHADOW_BALL
+	db 29, SHADOW_BALL
 	db 0 ; no more level-up moves
 
 HaunterEvosAttacks:

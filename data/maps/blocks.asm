@@ -994,3 +994,48 @@ DragonsDenB1F_Blocks:
 
 TohjoFalls_Blocks:
 	INCBIN "maps/TohjoFalls.blk"
+	
+SECTION "Map Blocks 4", ROMX
+
+GlobalTerminalOutside_Blocks:
+	INCBIN "maps/GlobalTerminalOutside.blk"
+
+GlobalTerminal1F_Blocks:
+	INCBIN "maps/GlobalTerminal1F.blk"
+	
+SECTION "Map Blocks 5", ROMX
+
+ViridianForest_Blocks:
+	INCBIN "maps/ViridianForest.blk"
+
+Route2NorthGate_Blocks:
+	INCBIN "maps/Route2NorthGate.blk"
+	
+Route2SouthGate_Blocks:
+	INCBIN "maps/Route2SouthGate.blk"
+	
+SECTION "Map Blocks 6", ROMX
+
+CinnabarGym_Blocks:
+	INCBIN "maps/CinnabarGym.blk"
+	
+SeafoamIslands1F_Blocks:
+	INCBIN "maps/SeafoamIslands1F.blk"
+	
+SeafoamIslandsB1F_Blocks:
+	INCBIN "maps/SeafoamIslandsB1F.blk"
+	
+SeafoamIslandsB2F_Blocks:
+	INCBIN "maps/SeafoamIslandsB2F.blk"
+	
+SeafoamIslandsB3F_Blocks:
+	INCBIN "maps/SeafoamIslandsB3F.blk"
+	
+SeafoamIslandsB4F_Blocks:
+	INCBIN "maps/SeafoamIslandsB4F.blk"
+	
+SeafoamIslandsEntrance_Blocks:
+	INCBIN "maps/SeafoamIslandsEntrance.blk"
+
+CeruleanCave_Blocks:
+	INCBIN "maps/CeruleanCave.blk"

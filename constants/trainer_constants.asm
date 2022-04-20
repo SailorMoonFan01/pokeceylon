@@ -118,6 +118,15 @@ CHRIS EQU __trainer_class__
 	const JIMMY
 	const OWEN
 	const JASON
+	const XANDER
+	const GABE
+	const REID
+	const LIAM
+	const LUCAS
+	const MATEO
+	const MASON
+	const LEVI
+	const DORAN
 
 	trainerclass SCHOOLBOY ; 17
 	const JACK1
@@ -182,6 +191,9 @@ CHRIS EQU __trainer_class__
 	const CONNIE3
 	const DANA2
 	const DANA3
+	const EMILY
+	const ZOEY
+	const DAKOTA
 
 	trainerclass JANINE ; 1a
 	const JANINE1
@@ -329,6 +341,9 @@ CHRIS EQU __trainer_class__
 	const DOUG
 	const ARNIE2
 	const ARNIE3
+	const RANDY
+	const VINCE
+	const NOAH
 
 	trainerclass FISHER ; 25
 	const JUSTIN

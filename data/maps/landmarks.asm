@@ -24,6 +24,7 @@ Landmarks:
 	landmark  52, 112, Route34Name
 	landmark  52,  92, GoldenrodCityName
 	landmark  50,  92, RadioTowerName
+	landmark  44,  92, GlobalTerminalName
 	landmark  52,  76, Route35Name
 	landmark  52,  60, NationalParkName
 	landmark  64,  60, Route36Name
@@ -56,11 +57,13 @@ Landmarks:
 	landmark  52,  92, Route1Name
 	landmark  52,  76, ViridianCityName
 	landmark  52,  64, Route2Name
+	landmark  52,  60, ViridianForestName
 	landmark  52,  52, PewterCityName
 	landmark  64,  52, Route3Name
 	landmark  76,  52, MtMoonName
 	landmark  88,  52, Route4Name
 	landmark 100,  52, CeruleanCityName
+	landmark 100,  48, CeruleanCaveName
 	landmark 100,  44, Route24Name
 	landmark 108,  36, Route25Name
 	landmark 100,  60, Route5Name
@@ -203,3 +206,4 @@ DiglettsCaveName:    db "DIGLETT's¯CAVE@"
 TohjoFallsName:      db "TOHJO FALLS@"
 UndergroundName:     db "UNDERGROUND@"
 SpecialMapName:      db "SPECIAL@"
+GlobalTerminalName:  db "GLOBAL¯TERMINAL@"
