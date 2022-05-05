@@ -669,11 +669,11 @@ BirdKeeperGroup:
 
 	; BIRD_KEEPER (4)
 	db "THEO@", TRAINERTYPE_NORMAL
-	db 34, NOCTOWL
-	db 36, FEAROW
-	db 35, AERODACTYL
-	db 38, MURKROW
-	db 35, PIDGEOT
+	db 39, NOCTOWL
+	db 40, FEAROW
+	db 39, AERODACTYL
+	db 40, MURKROW
+	db 39, PIDGEOT
 	db -1 ; end
 
 	; BIRD_KEEPER (5)
@@ -685,9 +685,9 @@ BirdKeeperGroup:
 
 	; BIRD_KEEPER (6)
 	db "DENIS@", TRAINERTYPE_NORMAL
-	db 38, TOGETIC
-	db 36, XATU
-	db 37, DODRIO
+	db 39, TOGETIC
+	db 40, XATU
+	db 39, DODRIO
 	db -1 ; end
 
 	; BIRD_KEEPER (7)
@@ -797,8 +797,8 @@ LassGroup:
 
 	; LASS (5)
 	db "CONNIE@", TRAINERTYPE_NORMAL
-	db 38, AZUMARILL
-	db 37, DUNSPARCE
+	db 40, AZUMARILL
+	db 40, DUNSPARCE
 	db -1 ; end
 
 	; LASS (6)
@@ -848,12 +848,14 @@ LassGroup:
 
 	; LASS (12)
 	db "CONNIE@", TRAINERTYPE_NORMAL
-	db 38, AZUMARILL
+	db 43, AZUMARILL
+	db 43, DUNSPARCE
 	db -1 ; end
 
 	; LASS (13)
 	db "CONNIE@", TRAINERTYPE_NORMAL
-	db 41, AZUMARILL
+	db 46, AZUMARILL
+	db 46, DUNSPARCE
 	db -1 ; end
 
 	; LASS (14)
@@ -1544,8 +1546,8 @@ GruntMGroup:
 GentlemanGroup:
 	; GENTLEMAN (1)
 	db "PRESTON@", TRAINERTYPE_NORMAL
-	db 36, ARCANINE
-	db 37, MAGCARGO
+	db 40, ARCANINE
+	db 41, MAGCARGO
 	db -1 ; end
 
 	; GENTLEMAN (2)
@@ -1566,7 +1568,7 @@ GentlemanGroup:
 
 	; GENTLEMAN (5)
 	db "ALFRED@", TRAINERTYPE_NORMAL
-	db 38, GRANBULL
+	db 42, GRANBULL
 	db -1 ; end
 
 SkierGroup:
@@ -2140,28 +2142,28 @@ SailorGroup:
 
 	; SAILOR (2)
 	db "HUEY@", TRAINERTYPE_NORMAL
-	db 37, POLIWRATH
-	db 36, RAICHU
+	db 40, POLIWRATH
+	db 41, RAICHU
 	db -1 ; end
 
 	; SAILOR (3)
 	db "TERRELL@", TRAINERTYPE_NORMAL
-	db 38, TENTACRUEL
+	db 42, TENTACRUEL
 	db -1 ; end
 
 	; SAILOR (4)
 	db "KENT@", TRAINERTYPE_ITEM
-	db 35, WOBBUFFET,     LEFTOVERS
+	db 39, WOBBUFFET,     LEFTOVERS
 	db 38, GYARADOS,     FOCUS_BAND
-	db 36, POLITOED,     FOCUS_BAND
-	db 37, MACHAMP,     FOCUS_BAND
+	db 39, POLITOED,     FOCUS_BAND
+	db 38, MACHAMP,     FOCUS_BAND
 	db -1 ; end
 
 	; SAILOR (5)
 	db "ERNEST@", TRAINERTYPE_NORMAL
-	db 36, QUAGSIRE
-	db 38, SNEASEL
-	db 37, URSARING
+	db 39, QUAGSIRE
+	db 40, SNEASEL
+	db 39, URSARING
 	db -1 ; end
 
 	; SAILOR (6)
