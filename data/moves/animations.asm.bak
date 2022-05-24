@@ -3108,7 +3108,7 @@ BattleAnim_SignalBeam:
 	anim_bgeffect ANIM_BG_06, $0, $2, $0
 	anim_bgeffect ANIM_BG_08, $0, $4, $0
 	anim_call BattleAnimSub_ShakeEnemy
-	anim_wait 16
+	anim_wait 64
 	anim_ret
 
 BattleAnim_TripleKick:
