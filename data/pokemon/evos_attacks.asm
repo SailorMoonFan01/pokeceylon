@@ -2699,7 +2699,7 @@ MisdreavusEvosAttacks:
 	db 1, SHADOW_BALL
 	db 1, THUNDERBOLT
 	db 1, PSYCHIC_M
-	db 1, TOXIC
+	db 1, MEAN_LOOK
 	db 19, SHADOW_BALL
 	db 27, SHADOW_BALL
 	db 36, SHADOW_BALL
