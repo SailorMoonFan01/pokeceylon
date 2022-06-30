@@ -1613,7 +1613,7 @@ JohtoGrassWildMons:
 	; morn
 	db 5, LEDYBA
 	db 5, PIKACHU
-	db 5, SPEAROW
+	db 5, GROWLITHE
 	db 5, PSYDUCK
 	db 5, EKANS
 	db 5, ODDISH
@@ -1621,7 +1621,7 @@ JohtoGrassWildMons:
 	; day
 	db 5, LEDYBA
 	db 5, PIKACHU
-	db 5, PIDGEY
+	db 5, VULPIX
 	db 5, EKANS
 	db 5, SENTRET
 	db 5, ODDISH
@@ -1629,7 +1629,7 @@ JohtoGrassWildMons:
 	; nite
 	db 5, POLIWAG
 	db 5, SPINARAK
-	db 5, HOOTHOOT
+	db 5, HOUNDOUR
 	db 5, EKANS
 	db 5, SPINARAK
 	db 5, RATTATA
@@ -1642,54 +1642,54 @@ JohtoGrassWildMons:
 	IF DEF(_GOLD)
 	; morn
 	db 6, MAREEP
-	db 6, SNUBBULL
+	db 6, GROWLITHE
 	db 6, BELLSPROUT
 	db 6, SPEAROW
 	db 6, PSYDUCK
 	db 6, PIKACHU
-	db 6, GROWLITHE
+	db 6, SNUBBULL
 	; day
 	db 6, MAREEP
-	db 6, SNUBBULL
+	db 6, VULPIX
 	db 6, BELLSPROUT
 	db 6, PIDGEY
 	db 6, PSYDUCK
 	db 6, PIKACHU
-	db 6, VULPIX
+	db 6, SNUBBULL
 	; nite
 	db 6, MAREEP
-	db 6, POLIWAG
+	db 6, HOUNDOUR
 	db 6, ODDISH
 	db 6, WOOPER
 	db 6, SNUBBULL
 	db 6, PIKACHU
-	db 6, HOUNDOUR
+	db 6, POLIWAG
 
 	ELIF DEF(_SILVER)
 	; morn
 	db 6, MAREEP
-	db 6, SNUBBULL
+	db 6, GROWLITHE
 	db 6, BELLSPROUT
 	db 6, SPEAROW
 	db 6, PSYDUCK
 	db 6, PIKACHU
-	db 6, GROWLITHE
+	db 6, SNUBBULL
 	; day
 	db 6, MAREEP
-	db 6, SNUBBULL
+	db 6, VULPIX
 	db 6, BELLSPROUT
 	db 6, PIDGEY
 	db 6, PSYDUCK
 	db 6, PIKACHU
-	db 6, VULPIX
+	db 6, SNUBBULL
 	; nite
 	db 6, MAREEP
-	db 6, POLIWAG
+	db 6, HOUNDOUR
 	db 6, ODDISH
 	db 6, WOOPER
 	db 6, SNUBBULL
 	db 6, PIKACHU
-	db 6, HOUNDOUR
+	db 6, POLIWAG
 	ENDC
 
 	map_id ROUTE_32
